@@ -4,19 +4,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>VIROM Parts</title>
-
 <style>
 body {
-  margin: 0;
   font-family: Arial, sans-serif;
+  margin: 0;
   background: #f4f4f4;
   color: #333;
 }
 header {
   background: #ff7a00;
   color: #fff;
-  padding: 25px;
   text-align: center;
+  padding: 25px;
 }
 nav {
   background: #222;
@@ -29,15 +28,6 @@ nav a {
   text-decoration: none;
   font-weight: bold;
 }
-.lang {
-  text-align: center;
-  margin: 15px 0;
-}
-.lang button {
-  padding: 5px 10px;
-  margin: 0 5px;
-  cursor: pointer;
-}
 section {
   max-width: 900px;
   background: #fff;
@@ -46,15 +36,6 @@ section {
 }
 h2 {
   color: #ff7a00;
-}
-ul {
-  padding-left: 20px;
-}
-.contacts a {
-  display: block;
-  margin: 6px 0;
-  color: #333;
-  text-decoration: none;
 }
 .order-buttons a {
   display: inline-block;
@@ -66,79 +47,46 @@ ul {
 }
 .whatsapp { background: #25D366; }
 .telegram { background: #0088cc; }
-form input, form textarea {
-  width: 100%;
-  padding: 8px;
-  margin: 6px 0;
-}
-form button {
-  background: #ff7a00;
-  color: #fff;
-  border: none;
-  padding: 12px;
-  width: 100%;
-  font-size: 16px;
-  cursor: pointer;
-}
 footer {
   background: #222;
   color: #fff;
   text-align: center;
   padding: 10px;
+  margin-top: 20px;
 }
 </style>
 </head>
-
 <body>
 
 <header>
   <h1>VIROM Parts</h1>
-  <p data-pl="Sprzedaż części zamiennych pod zamówienie. Solidnie i szybko."
-     data-ua="Продаж запчастин під замовлення. Надійно та швидко."
-     data-ru="Продажа запчастей под заказ. Надёжно и быстро.">
-     Sprzedaż części zamiennych pod zamówienie. Solidnie i szybko.
-  </p>
+  <p>Sprzedaż części zamiennych pod zamówienie. Solidnie i szybko.</p>
 </header>
 
-<div class="lang">
-  <button onclick="setLang('pl')">PL</button>
-  <button onclick="setLang('ua')">UA</button>
-  <button onclick="setLang('ru')">RU</button>
-</div>
-
 <nav>
-  <a href="#about" data-pl="O nas" data-ua="Про нас" data-ru="О нас">O nas</a>
-  <a href="#offer" data-pl="Oferta" data-ua="Пропозиція" data-ru="Предложение">Oferta</a>
-  <a href="#order" data-pl="Zamówienie" data-ua="Замовлення" data-ru="Заказ">Zamówienie</a>
-  <a href="#contact" data-pl="Kontakt" data-ua="Контакти" data-ru="Контакты">Kontakt</a>
+  <a href="#about">O nas</a>
+  <a href="#offer">Oferta</a>
+  <a href="#order">Zamówienie</a>
+  <a href="#contact">Kontakt</a>
 </nav>
 
 <section id="about">
-  <h2 data-pl="O nas" data-ua="Про нас" data-ru="О нас">O nas</h2>
-  <p data-pl="Zajmujemy się sprzedażą części zamiennych pod zamówienie. Dobieramy odpowiednie części i szybko odpowiadamy klientom."
-     data-ua="Ми займаємося продажем запчастин під замовлення. Допомагаємо підібрати деталі та швидко відповідаємо клієнтам."
-     data-ru="Мы занимаемся продажей запчастей под заказ. Помогаем подобрать детали и быстро отвечаем клиентам.">
-     Zajmujemy się sprzedażą części zamiennych pod zamówienie.
-  </p>
+  <h2>O nas</h2>
+  <p>Zajmujemy się sprzedażą części zamiennych pod zamówienie.</p>
 </section>
 
 <section id="offer">
-  <h2 data-pl="Oferta" data-ua="Пропозиція" data-ru="Предложение">Oferta</h2>
+  <h2>Oferta</h2>
   <ul>
-    <li data-pl="Części samochodowe" data-ua="Автомобільні запчастини" data-ru="Автозапчасти">Części samochodowe</li>
-    <li data-pl="Części do maszyn i urządzeń" data-ua="Запчастини до техніки" data-ru="Запчасти для техники">Części do maszyn</li>
-    <li data-pl="Części pod indywidualne zamówienie" data-ua="Запчастини під замовлення" data-ru="Запчасти под заказ">Części pod zamówienie</li>
+    <li>Części samochodowe</li>
+    <li>Części do maszyn</li>
+    <li>Części pod zamówienie</li>
   </ul>
 </section>
 
 <section id="order">
-  <h2 data-pl="Zamówienie" data-ua="Замовлення" data-ru="Заказ">Zamówienie</h2>
-  <p data-pl="Skontaktuj się z nami, aby szybko zamówić potrzebne części."
-     data-ua="Звʼяжіться з нами, щоб швидко замовити потрібні запчастини."
-     data-ru="Свяжитесь с нами, чтобы быстро заказать нужные запчасти.">
-     Skontaktuj się z nami.
-  </p>
-
+  <h2>Zamówienie</h2>
+  <p>Skontaktuj się z nami:</p>
   <div class="order-buttons">
     <a class="whatsapp" href="https://wa.me/48736117111" target="_blank">WhatsApp</a>
     <a class="telegram" href="https://t.me/wv2006geta" target="_blank">Telegram</a>
@@ -146,34 +94,14 @@ footer {
 </section>
 
 <section id="contact">
-  <h2 data-pl="Kontakt" data-ua="Контакти" data-ru="Контакты">Kontakt</h2>
-
-  <div class="contacts">
-    <a href="tel:+48736117111">📞 +48 736 117 111</a>
-    <a href="mailto:wv2006geta@gmail.com">✉️ wv2006geta@gmail.com</a>
-    <a href="#">Facebook</a>
-    <a href="#">Instagram</a>
-  </div>
-
-  <form onsubmit="alert('Wiadomość wysłana!'); return false;">
-    <input type="text" placeholder="Twoje imię / Ваше ім’я / Ваше имя" required>
-    <input type="email" placeholder="Twój email / Ваш email" required>
-    <textarea placeholder="Twoja wiadomość / Ваше повідомлення / Ваше сообщение" required></textarea>
-    <button type="submit" data-pl="Wyślij" data-ua="Відправити" data-ru="Отправить">Wyślij</button>
-  </form>
+  <h2>Kontakt</h2>
+  <p>📞 +48 736 117 111</p>
+  <p>✉️ wv2006geta@gmail.com</p>
 </section>
 
 <footer>
   © VIROM Parts
 </footer>
-
-<script>
-function setLang(lang) {
-  document.querySelectorAll('[data-pl]').forEach(el => {
-    el.textContent = el.getAttribute('data-' + lang);
-  });
-}
-</script>
 
 </body>
 </html>
