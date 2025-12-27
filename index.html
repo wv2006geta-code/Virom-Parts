@@ -1,0 +1,96 @@
+ <!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIROM Parts</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin:0; padding:0; background:#fff; color:#333; }
+    header { background: #ff6600; color: #fff; padding: 20px; text-align: center; }
+    nav { display: flex; justify-content: center; margin: 10px 0; }
+    nav button { margin: 0 5px; padding: 8px 12px; cursor: pointer; border:none; border-radius:5px; }
+    section { padding: 20px; max-width: 900px; margin: auto; }
+    h2 { color: #ff6600; }
+    .contacts a { display:block; margin:5px 0; color:#ff6600; text-decoration:none; }
+    form { display:flex; flex-direction:column; max-width:400px; }
+    form input, form textarea { margin:5px 0; padding:10px; }
+    form button { background:#ff6600; color:#fff; border:none; padding:10px; cursor:pointer; border-radius:5px; }
+    .order-buttons a { margin:5px 5px 10px 0; padding:10px 15px; text-decoration:none; border-radius:5px; color:#fff; display:inline-block; }
+    .whatsapp { background:#25D366; }
+    .telegram { background:#0088cc; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1 id="site-title">VIROM Parts</h1>
+  <div>
+    <button onclick="setLanguage('pl')">PL</button>
+    <button onclick="setLanguage('ua')">UA</button>
+    <button onclick="setLanguage('ru')">RU</button>
+  </div>
+</header>
+
+<section id="about">
+  <h2 data-pl="O nas" data-ua="Про компанію" data-ru="О компании">O nas</h2>
+  <p data-pl="Sprzedaż części zamiennych pod zamówienie. Solidnie i szybko."
+     data-ua="Продаж запчастин під замовлення. Надійно та швидко."
+     data-ru="Продажа запчастей под заказ. Надежно и быстро.">
+    Sprzedaż części zamiennych pod zamówienie. Solidnie i szybko.
+  </p>
+</section>
+
+<section id="catalog">
+  <h2 data-pl="Oferta" data-ua="Асортимент" data-ru="Ассортимент">Oferta</h2>
+  <ul>
+    <li data-pl="Część 1" data-ua="Запчастина 1" data-ru="Запчасть 1">Część 1</li>
+    <li data-pl="Część 2" data-ua="Запчастина 2" data-ru="Запчасть 2">Część 2</li>
+    <li data-pl="Część 3" data-ua="Запчастина 3" data-ru="Запчасть 3">Część 3</li>
+  </ul>
+</section>
+
+<section id="order">
+  <h2 data-pl="Zamówienie" data-ua="Як замовити" data-ru="Как заказать">Zamówienie</h2>
+  <p data-pl="Skontaktuj się z nami, aby zamówić części." 
+     data-ua="Зв'яжіться з нами, щоб замовити запчастини."
+     data-ru="Свяжитесь с нами, чтобы заказать запчасти.">
+    Skontaktuj się z nami, aby zamówić części.
+  </p>
+</section>
+
+<section id="contact">
+  <h2 data-pl="Kontakt" data-ua="Контакти" data-ru="Контакты">Kontakt</h2>
+  <div class="contacts">
+    <a href="tel:+48736117111">+48 736 117 111</a>
+    <a href="mailto:wv2006geta@gmail.com">wv2006geta@gmail.com</a>
+    <a href="https://www.facebook.com/VIROMParts" target="_blank">Facebook</a>
+    <a href="https://www.instagram.com/VIROMParts" target="_blank">Instagram</a>
+  </div>
+
+  <!-- Кнопки швидкого замовлення -->
+  <div class="order-buttons">
+    <a href="https://wa.me/48736117111?text=Chcę%20zamówić%20części" target="_blank" class="whatsapp">Zamów przez WhatsApp</a>
+    <a href="https://t.me/wv2006geta" target="_blank" class="telegram">Zamów przez Telegram</a>
+  </div>
+
+  <!-- Форма зворотного зв’язку -->
+  <form onsubmit="alert('Form submitted!'); return false;">
+    <input type="text" placeholder="Twoje imię / Ваше ім’я / Ваше имя" required>
+    <input type="email" placeholder="Twój email / Ваш email" required>
+    <textarea placeholder="Twoja wiadomość / Ваше повідомлення / Ваше сообщение" required></textarea>
+    <button type="submit" data-pl="Wyślij" data-ua="Відправити" data-ru="Отправить">Wyślij</button>
+  </form>
+</section>
+
+<script>
+function setLanguage(lang) {
+  document.querySelectorAll('[data-pl]').forEach(el => {
+    if(lang==='pl') el.innerText = el.getAttribute('data-pl');
+    if(lang==='ua') el.innerText = el.getAttribute('data-ua');
+    if(lang==='ru') el.innerText = el.getAttribute('data-ru');
+  });
+}
+</script>
+
+</body>
+</html>
